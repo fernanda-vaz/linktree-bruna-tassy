@@ -52,11 +52,17 @@ body {
   font-weight: 300;
 }
 
+.efeito {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
 .link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 5px 30px;
   color: #fff;
   background-color: rgba(30, 30, 30, 0.77);
   text-decoration: none;
@@ -66,21 +72,22 @@ body {
 }
 
 .link:hover {
-  opacity: 0.6;
+  opacity: 0.3;
+  transform: scale(1.05);
 }
 
 .hidden {
   opacity: 0;
   filter: blur(15px);
   transform: translateX(-100%);
-  transition: all 1.5s;
+  transition: all 1.2s;
 }
 
 .show {
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0);
-  transition: all 1.5s;
+  transition: all 1.2s;
 }
 
 .efeito :nth-child(2) {
